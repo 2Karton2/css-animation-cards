@@ -1,0 +1,1 @@
+This is my project with animated cards. I animated them using transitions and a little bit of animations
