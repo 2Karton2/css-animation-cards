@@ -2,6 +2,14 @@ body {
     margin: 0px;
     padding: 0px;
     color: black;
+    background-color: var(--background-color-main);
+}
+
+:root {
+    --cards-card: #d4d3d3;
+    --cards-card-hover: #bdbcbc;
+    --background-color-wrapper: #f5f5f5;
+    --background-color-main: #fff;
 }
 
 .container-main {
@@ -23,7 +31,7 @@ body {
     width: 100%;
     height: 380px;
     flex-wrap: nowrap;
-    background-color: #f0f0f0;
+    background-color: var(--background-color-wrapper);
     gap: 20px;
     border-bottom: 2px solid #333;
 }
@@ -35,14 +43,14 @@ body {
     width: 200px;
     min-width: 200px;
     border-radius: 18px;
-    background-color: #d4d3d3;
+    background-color: var(--cards-card);
     overflow: hidden;
-    transition: transform 0.1s, height 0.1s, background-color 0.2s, box-shadow 0s, opacity 0.3s;
+    transition: transform 0.1s, height 0.05s, background-color 0.2s, box-shadow 0s, opacity 0.3s;
 }
 
 .card:hover {
     transform: scale(1.03);
-    background-color: #bdbcbc;
+    background-color: var(--cards-card-hover);
     height: 360px;
     box-shadow: 0px 1.5px 2px 0px #555;
 }
@@ -182,11 +190,11 @@ font-size: 20px;
     left: 0;
     width: 100%;
     height: 225px;
-    background-color: #d4d3d3;
+    background-color: var(--cards-card);
     border-radius: 18px;
     box-shadow: 0px 0px 0px 0px black;
     overflow: hidden;
-    transition: height 0.04s, transform 0.1s, box-shadow 0.1s, z-index 0s, background-color 0.2s;
+    transition: height 0.05s, transform 0.1s, box-shadow 0.1s, z-index 0s, background-color 0.2s;
 }
 
 .grid__wrapper__card:hover {
@@ -194,7 +202,7 @@ font-size: 20px;
     height: 275px;
     transform: scale(1.04);
     box-shadow: 0px 2px 2px 0px #555;
-    background-color: #bdbcbc;
+    background-color: var(--cards-card-hover);
 }
 
 .img {
@@ -252,7 +260,7 @@ font-size: 20px;
     align-items: center;
     border-right: 2px solid #333;
     z-index: 100;
-    background-color: white;
+    background-color: var(--background-color-main);
 }
 
 .settings {
